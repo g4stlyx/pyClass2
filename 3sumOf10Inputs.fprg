@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Arel"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-14 02:36:40 &#214;S"/>
+        <attribute name="created" value="QXJlbDtCMTA5LTAxOzIwMjItMTAtMTQ7MDE6NTI6Mjcgw5ZTOzIxNjM="/>
+        <attribute name="edited" value="QXJlbDtCMTA5LTAxOzIwMjItMTAtMTQ7MDI6MzY6NDAgw5ZTOzI7MjI3MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="total" type="Integer" array="False" size=""/>
+            <declare name="counter" type="Integer" array="False" size=""/>
+            <assign variable="counter" expression="1"/>
+            <assign variable="total" expression="0"/>
+            <while expression="counter &lt;= 10">
+                <output expression="&quot;please give &quot; &amp;counter&amp; &quot;. number:&quot;" newline="True"/>
+                <input variable="a"/>
+                <assign variable="counter" expression="counter + 1"/>
+                <assign variable="total" expression="total + a"/>
+            </while>
+            <output expression="total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

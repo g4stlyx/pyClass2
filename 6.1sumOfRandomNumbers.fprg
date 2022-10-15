@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Arel"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-14 03:41:31 &#214;S"/>
+        <attribute name="created" value="QXJlbDtCMTA5LTAxOzIwMjItMTAtMTQ7MDM6MzM6Mzcgw5ZTOzIxNjU="/>
+        <attribute name="edited" value="QXJlbDtCMTA5LTAxOzIwMjItMTAtMTQ7MDM6NDE6MzEgw5ZTOzE7MjI2Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="number" type="Integer" array="True" size="10"/>
+            <declare name="i, sum" type="Integer" array="False" size=""/>
+            <assign variable="sum" expression="0"/>
+            <assign variable="i" expression="0"/>
+            <for variable="i" start="0" end="size(number)-1" direction="inc" step="1">
+                <assign variable="number[i]" expression="random(11)"/>
+            </for>
+            <for variable="i" start="0" end="size(number)-1" direction="inc" step="1">
+                <if expression="number[i]%2 ==0">
+                    <then>
+                        <assign variable="sum" expression="sum + number[i]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

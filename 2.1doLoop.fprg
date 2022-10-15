@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Arel"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-14 01:31:12 &#214;S"/>
+        <attribute name="created" value="QXJlbDtCMTA5LTAxOzIwMjItMTAtMTQ7MDE6MTg6NTYgw5ZTOzIxNjc="/>
+        <attribute name="edited" value="QXJlbDtCMTA5LTAxOzIwMjItMTAtMTQ7MDE6MzE6MTIgw5ZTOzE7MjI2Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="counter" type="Integer" array="False" size=""/>
+            <assign variable="counter" expression="1"/>
+            <do expression="counter &lt;= 5">
+                <assign variable="counter" expression="counter + 1"/>
+                <output expression="&quot;hello world&quot;" newline="True"/>
+            </do>
+        </body>
+    </function>
+</flowgorithm>
